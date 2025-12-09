@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact Form Message - Meta-MicroDigital</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #30D1FF 0%, #7DE5FF 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .company-name {
+            font-size: 18px;
+            margin-top: 8px;
+            opacity: 0.95;
+        }
+        .info-section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #30D1FF;
+            border-radius: 4px;
+        }
+        .info-row {
+            margin: 12px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #555;
+            display: inline-block;
+            min-width: 140px;
+            font-size: 14px;
+        }
+        .info-value {
+            color: #333;
+            flex: 1;
+            font-size: 14px;
+        }
+        .info-value a {
+            color: #30D1FF;
+            text-decoration: none;
+        }
+        .info-value a:hover {
+            text-decoration: underline;
+        }
+        .message-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .message-section h3 {
+            margin-top: 0;
+            color: #30D1FF;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .message-content {
+            margin-top: 15px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 3px solid #30D1FF;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            line-height: 1.8;
+            font-size: 14px;
+            color: #333;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+        }
+        .footer a {
+            color: #30D1FF;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .brand-color {
+            color: #30D1FF;
+            font-weight: 600;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+            .info-row {
+                flex-direction: column;
+            }
+            .info-label {
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📬 New Contact Form Message</h1>
+            <div class="company-name">Meta-MicroDigital</div>
+        </div>
+        
+        <div class="info-section">
+            <h3 style="margin-top: 0; margin-bottom: 20px; color: #30D1FF; font-size: 18px; font-weight: 600;">📋 Contact Information</h3>
+            <div class="info-row">
+                <span class="info-label">👤 Full Name:</span>
+                <span class="info-value"><strong>{{from_name}}</strong></span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">📧 Email Address:</span>
+                <span class="info-value"><a href="mailto:{{from_email}}">{{from_email}}</a></span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">📅 Date & Time:</span>
+                <span class="info-value">{{date}} at {{time}}</span>
+            </div>
+        </div>
+        
+        <div class="info-section" style="margin-top: 25px;">
+            <h3 style="margin-top: 0; margin-bottom: 20px; color: #30D1FF; font-size: 18px; font-weight: 600;">📌 Message Details</h3>
+            <div class="info-row">
+                <span class="info-label">📋 Subject:</span>
+                <span class="info-value"><strong>{{subject}}</strong></span>
+            </div>
+        </div>
+        
+        <div class="message-section">
+            <h3 style="margin-top: 0; margin-bottom: 15px;">💬 Message Content:</h3>
+            <div class="message-content">{{message}}</div>
+        </div>
+        
+        <div class="info-section" style="margin-top: 25px; background-color: #e8f8ff; border-left-color: #30D1FF;">
+            <h3 style="margin-top: 0; margin-bottom: 15px; color: #30D1FF; font-size: 16px; font-weight: 600;">⚡ Quick Actions</h3>
+            <div class="info-row">
+                <span class="info-label">✉️ Reply To:</span>
+                <span class="info-value"><a href="mailto:{{from_email}}?subject=Re: {{subject}}">{{from_email}}</a></span>
+            </div>
+            <div class="info-row" style="margin-top: 10px;">
+                <span class="info-label">📞 Contact:</span>
+                <span class="info-value">Click the email above to reply directly</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>This message was sent from your <span class="brand-color">Meta-MicroDigital</span> contact form.</p>
+            <p>Reply directly to: <a href="mailto:{{from_email}}">{{from_email}}</a></p>
+            <p style="margin-top: 15px; font-size: 11px; color: #999;">
+                Meta-MicroDigital - Transforming businesses through innovative IT solutions and data-driven digital marketing strategies.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

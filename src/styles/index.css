@@ -1,0 +1,89 @@
+/* Import Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Import custom styles from public */
+@import url('/assets/styles/style.css');
+@import url('/assets/styles/animations.css');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff !important;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Ensure all main sections have white background */
+main,
+section,
+article {
+  background-color: #ffffff !important;
+}
+
+/* Override any light background colors */
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+/* Keep hero section with video background - override white background rule */
+.hero-simple {
+  background-color: transparent !important;
+}
+
+/* Keep footer dark background - override white background rule */
+/* Footer Navigation Links Fix */
+.bg-secondary a,
+.bg-secondary a.text-white,
+.bg-secondary .text-white,
+.bg-secondary [class*="text-white"],
+.bg-secondary .d-flex.flex-column a {
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-secondary a:hover,
+.bg-secondary a.text-white:hover,
+.bg-secondary .text-white:hover,
+.bg-secondary [class*="text-white"]:hover,
+.bg-secondary .d-flex.flex-column a:hover {
+  color: var(--primary) !important;
+  text-decoration: none !important;
+  transform: translateX(5px);
+}
+
+.bg-secondary .navbar-brand,
+.bg-secondary .navbar-brand a {
+  text-decoration: none !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-secondary .navbar-brand:hover,
+.bg-secondary .navbar-brand a:hover {
+  text-decoration: none !important;
+}
+
+/* Ensure React Router Link components in footer are clickable */
+.bg-secondary [class*="col-"] a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
