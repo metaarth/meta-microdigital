@@ -29,7 +29,7 @@ const BlogDetail = () => {
 
   const recentPosts = [
     { title: "The Power of Digital Marketing", image: "/assets/images/blog-1.jpg", link: "/blog/digital-marketing-power" },
-    { title: "Complete SEO Guide for 2024", image: "/assets/images/blog-2.jpg", link: "/blog/seo-guide-2024" },
+    { title: "Complete SEO Guide for 2026", image: "/assets/images/blog-2.jpg", link: "/blog/seo-guide-2026" },
     { title: "Social Media Strategy That Works", image: "/assets/images/blog-1.jpg", link: "/blog/social-media-strategy" },
     { title: "Modern Web Development Trends", image: "/assets/images/blog-2.jpg", link: "/blog/web-development-trends" }
   ]
@@ -164,7 +164,7 @@ const BlogDetail = () => {
                 />
                 <div className="media-body">
                   <h6>
-                    Sarah Johnson <small><i>15 Oct 2024 at 2:30pm</i></small>
+                    Sarah Johnson <small><i>15 Oct 2026 at 2:30pm</i></small>
                   </h6>
                   <p>
                     This article perfectly captures how digital marketing has changed everything! Our small business saw
@@ -182,7 +182,7 @@ const BlogDetail = () => {
                 />
                 <div className="media-body">
                   <h6>
-                    Mike Chen <small><i>14 Oct 2024 at 5:45pm</i></small>
+                    Mike Chen <small><i>14 Oct 2026 at 5:45pm</i></small>
                   </h6>
                   <p>
                     Great insights on the celebrity aspect of social media. I've seen so many people build successful

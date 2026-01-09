@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
+import Webdesign from '../Assets/Webimgs/Webdesign.jpg'
 
 const WebsiteDesign = () => {
   useEffect(() => {
@@ -37,7 +38,7 @@ const WebsiteDesign = () => {
         <div className="row">
           <div className="col-lg-8">
             <div className="mb-5">
-              <img className="img-fluid w-100" src="/assets/images/blog-1.jpg" alt="Website Design Services" />
+              <img className="img-fluid w-100" src={Webdesign} alt="Website Design Services" />
               <h1 className="mt-4 mb-3">Professional Website Design Services</h1>
               <p className="lead">
                 Transform your online presence with our responsive, conversion-focused website design services. We create

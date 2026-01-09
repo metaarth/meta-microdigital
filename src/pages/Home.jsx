@@ -35,13 +35,20 @@ const Home = () => {
 
   return (
     <>
-      <HeroCarousel />
+          <HeroCarousel />
 
       {/* About Start */}
       <div className="container-fluid py-5">
         <div className="container">
           <div className="row align-items-center pb-1">
             <div className="col-lg-5">
+              <div className="about-image-wrapper">
+                <img 
+                  src="/assets/images/Webimg/Business.jpg" 
+                  alt="Business" 
+                  className="img-fluid rounded about-business-image"
+                />
+              </div>
             </div>
             <div className="col-lg-7 mt-5 mt-lg-0">
               <small className="bg-primary text-white text-uppercase font-weight-bold px-1">
@@ -53,6 +60,13 @@ const Home = () => {
                 businesses scale with confidence. From secure cloud infrastructure and websites that
                 convert to SEO, paid media and content, we build reliable systems that attract,
                 engage and retain customers.
+              </p>
+              <p className="mb-4">
+                We specialize in creating seamless digital experiences that not only look great but perform
+                exceptionally. Our comprehensive approach covers everything from cloud migration and network
+                security to conversion-optimized web design, search engine optimization, social media management,
+                and data-driven marketing campaigns. We believe in transparent communication, measurable outcomes,
+                and building long-term partnerships that fuel your business growth.
               </p>
               <Link to="/about" className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold btn-animated">
                 Read More
@@ -245,32 +259,6 @@ const Home = () => {
       </div>
       {/* Features End */}
 
-      {/* Team Start */}
-      {/* <div className="container-fluid pt-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 mb-5">
-              <small className="bg-primary text-white text-uppercase font-weight-bold px-1">
-                Meet The Team
-              </small>
-              <h1 className="mt-2 mb-3">Meet Our Expert Team</h1>
-              <h4 className="font-weight-normal text-muted mb-4">
-                Our diverse team of certified professionals brings together technical expertise,
-                creative vision, and strategic thinking to deliver exceptional results for your
-                business.
-              </h4>
-              <Link to="/about" className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold btn-animated">
-                Meet All Experts
-              </Link>
-            </div>
-            <div className="col-lg-8 mb-5">
-              <TeamCarousel />
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* Team End */}
-
       {/* Pricing Plan Start */}
       <div className="container-fluid pt-5">
         <div className="container">
@@ -387,12 +375,12 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 mb-5">
               <div className="position-relative">
-                <img className="img-fluid w-100" src="/assets/images/blog-1.jpg" alt="Digital Marketing Trends 2024" />
+                <img className="img-fluid w-100" src="/assets/images/blog-1.jpg" alt="Digital Marketing Trends 2026" />
                 <div
                   className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center"
                   style={{ width: '80px', height: '80px', bottom: 0, left: 0 }}
                 >
-                  <h6 className="text-uppercase mt-2 mb-n2">Dec</h6>
+                  <h6 className="text-uppercase mt-2 mb-n2">Jan</h6>
                   <h1 className="m-0">15</h1>
                 </div>
               </div>
@@ -416,8 +404,8 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-                <Link className="h5 font-weight-bold" to="/blog/digital-marketing-trends-2024">
-                  Top Digital Marketing Trends That Will Dominate 2024
+                <Link className="h5 font-weight-bold" to="/blog/digital-marketing-trends-2026">
+                  Top Digital Marketing Trends That Will Dominate 2026
                 </Link>
               </div>
             </div>
@@ -452,8 +440,8 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-                <Link className="h5 font-weight-bold" to="/blog/seo-strategies-2024">
-                  Essential SEO Strategies for Small Businesses in 2024
+                <Link className="h5 font-weight-bold" to="/blog/seo-strategies-2026">
+                  Essential SEO Strategies for Small Businesses in 2026
                 </Link>
               </div>
             </div>
