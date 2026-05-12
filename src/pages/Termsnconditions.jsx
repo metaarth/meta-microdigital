@@ -9,7 +9,7 @@ const Termsnconditions = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Terms & Conditions",
-      "description": "Terms and Conditions for Meta-MicroDigital"
+      "description": "Terms and Conditions for Meta MicroDigital"
     })
     document.head.appendChild(script)
     return () => document.head.removeChild(script)
@@ -41,13 +41,13 @@ const Termsnconditions = () => {
                 </p>
                 
                 <p className="mb-4">
-                  Welcome to Meta-MicroDigital. By accessing or using our website ("Site") and our services, you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully. If you do not agree with any part of these terms, you must not use our website or services.
+                  Welcome to Meta MicroDigital. By accessing or using our website ("Site") and our services, you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully. If you do not agree with any part of these terms, you must not use our website or services.
                 </p>
 
                 <div className="terms-section mb-5">
                   <h2 className="h4 mb-3" style={{ color: '#30D1FF' }}>1. Definitions</h2>
                   <ul className="list-unstyled">
-                    <li className="mb-2"><strong>"Company"</strong>, <strong>"We"</strong>, <strong>"Us"</strong>, <strong>"Our"</strong> refers to Meta-MicroDigital</li>
+                    <li className="mb-2"><strong>"Company"</strong>, <strong>"We"</strong>, <strong>"Us"</strong>, <strong>"Our"</strong> refers to Meta MicroDigital</li>
                     <li className="mb-2"><strong>"User"</strong>, <strong>"Client"</strong>, <strong>"You"</strong>, <strong>"Your"</strong> refers to any individual or entity using our website or services.</li>
                     <li className="mb-2"><strong>"Services"</strong> refers to marketing, branding, software development, IT consultation, digital solutions, and any other services provided by us.</li>
                   </ul>
@@ -66,7 +66,7 @@ const Termsnconditions = () => {
                 <div className="terms-section mb-5">
                   <h2 className="h4 mb-3" style={{ color: '#30D1FF' }}>3. Services & Deliverables</h2>
                   <ul>
-                    <li className="mb-2">All services provided by Meta-MicroDigital will be based on agreed proposals, quotations, or contracts.</li>
+                    <li className="mb-2">All services provided by Meta MicroDigital will be based on agreed proposals, quotations, or contracts.</li>
                     <li className="mb-2">Project timelines may vary depending on the scope, client feedback, and third-party dependencies.</li>
                     <li className="mb-2">Any additions or modifications requested after final agreement may incur additional charges.</li>
                   </ul>
@@ -84,7 +84,7 @@ const Termsnconditions = () => {
                 <div className="terms-section mb-5">
                   <h2 className="h4 mb-3" style={{ color: '#30D1FF' }}>5. Intellectual Property</h2>
                   <ul>
-                    <li className="mb-2">All content, designs, software, strategies, marketing assets, and documentation created during the project remain the intellectual property of Meta-MicroDigital unless otherwise stated.</li>
+                    <li className="mb-2">All content, designs, software, strategies, marketing assets, and documentation created during the project remain the intellectual property of Meta MicroDigital unless otherwise stated.</li>
                     <li className="mb-2">Upon full payment, the client receives rights to use the final approved deliverables for their business operations.</li>
                     <li className="mb-2">The Company reserves the right to display completed work in its portfolio unless a written NDA states otherwise.</li>
                   </ul>
@@ -110,7 +110,7 @@ const Termsnconditions = () => {
 
                 <div className="terms-section mb-5">
                   <h2 className="h4 mb-3" style={{ color: '#30D1FF' }}>8. Limitation of Liability</h2>
-                  <p className="mb-2">To the fullest extent permitted by law, Meta-MicroDigital is not liable for:</p>
+                  <p className="mb-2">To the fullest extent permitted by law, Meta MicroDigital is not liable for:</p>
                   <ul>
                     <li className="mb-2">Any loss of revenue, profits, business, or data</li>
                     <li className="mb-2">Website downtime, cyber-attacks, or service interruptions</li>
@@ -120,7 +120,7 @@ const Termsnconditions = () => {
 
                 <div className="terms-section mb-5">
                   <h2 className="h4 mb-3" style={{ color: '#30D1FF' }}>9. Indemnification</h2>
-                  <p className="mb-2">You agree to indemnify and hold Meta-MicroDigital harmless against any claims, losses, damages, or expenses arising from:</p>
+                  <p className="mb-2">You agree to indemnify and hold Meta MicroDigital harmless against any claims, losses, damages, or expenses arising from:</p>
                   <ul>
                     <li className="mb-2">Your breach of these Terms & Conditions</li>
                     <li className="mb-2">Misuse of our services or website</li>
@@ -150,8 +150,8 @@ const Termsnconditions = () => {
                   <h2 className="h4 mb-3" style={{ color: '#30D1FF' }}>13. Contact Information</h2>
                   <p className="mb-2">If you have any questions about these Terms & Conditions, please contact us:</p>
                   <ul className="list-unstyled">
-                    <li className="mb-2"><strong>Meta-MicroDigital</strong></li>
-                    <li className="mb-2"><strong>Email:</strong> info@microdigitall.com</li>
+                    <li className="mb-2"><strong>Meta MicroDigital</strong></li>
+                    <li className="mb-2"><strong>Email:</strong> info@metamicrodigital.com</li>
                     <li className="mb-2"><strong>Phone:</strong> +91 8318891438</li>
                     <li className="mb-2"><strong>Address:</strong> T-02, A-44 VDS Tower Sec-02 Near Sector-15 Metro Station</li>
                   </ul>

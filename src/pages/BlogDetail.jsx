@@ -65,10 +65,10 @@ const BlogDetail = () => {
                     className="rounded-circle"
                     style={{ width: '40px', height: '40px' }}
                     src="/assets/images/user.jpg"
-                    alt="Meta-MicroDigital Author"
+                    alt="Meta MicroDigital Author"
                   />
                   <a className="text-muted ml-2" href="#">
-                    Meta-MicroDigital Team
+                    Meta MicroDigital Team
                   </a>
                 </div>
                 <div className="d-flex align-items-center ml-4">
@@ -143,7 +143,7 @@ const BlogDetail = () => {
                   <i className="fas fa-lightbulb mr-2"></i>Ready to Transform Your Business?
                 </h5>
                 <p className="mb-0">
-                  At Meta-MicroDigital, we help businesses harness the full power of digital marketing. From SEO and social
+                  At Meta MicroDigital, we help businesses harness the full power of digital marketing. From SEO and social
                   media to website development and analytics, we provide the expertise and tools you need to succeed
                   online.
                 </p>
@@ -279,7 +279,7 @@ const BlogDetail = () => {
 
             <div className="border p-4 mb-5 bg-primary text-white">
               <h4 className="font-weight-bold mb-3">Ready to Grow Your Business?</h4>
-              <p className="mb-3">Let Meta-MicroDigital help you harness the power of digital marketing.</p>
+              <p className="mb-3">Let Meta MicroDigital help you harness the power of digital marketing.</p>
               <Link to="/contact" className="btn btn-light btn-animated">
                 Get Free Consultation
               </Link>

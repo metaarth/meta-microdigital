@@ -13,7 +13,7 @@ const SEO = () => {
       "description": "Professional search engine optimization services to improve website rankings and drive organic traffic",
       "provider": {
         "@type": "Organization",
-        "name": "Meta-MicroDigital"
+        "name": "Meta MicroDigital"
       },
       "serviceType": "Search Engine Optimization",
       "areaServed": "Worldwide"

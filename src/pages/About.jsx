@@ -39,13 +39,13 @@ const About = () => {
         <div className="container">
           <div className="row align-items-center pb-1">
             <div className="col-lg-5">
-              <img className="img-thumbnail p-3" src="/assets/images/about.jpg" alt="About Meta-MicroDigital" />
+              <img className="img-thumbnail p-3" src="/assets/images/about.jpg" alt="About Meta MicroDigital" />
             </div>
             <div className="col-lg-7 mt-5 mt-lg-0">
               <small className="bg-primary text-white text-uppercase font-weight-bold px-1">Who We Are</small>
-              <h1 className="mt-2 mb-4">Meta-MicroDigital: Where Strategy, Creativity & Technology Unite</h1>
+              <h1 className="mt-2 mb-4">Meta MicroDigital: Where Strategy, Creativity & Technology Unite</h1>
               <p className="mb-4">
-                Meta-MicroDigital is an IT and digital marketing company focused on building growth engines
+                Meta MicroDigital is an IT and digital marketing company focused on building growth engines
                 for modern businesses. We combine secure technology foundations with performance marketing
                 to help brands acquire, convert, and retain customers more efficiently.
               </p>
@@ -85,7 +85,7 @@ const About = () => {
                 <i className="fa fa-2x fa-envelope-open text-primary mr-3"></i>
                 <div className="d-flex flex-column">
                   <h5 className="font-weight-bold">Email Us</h5>
-                  <p className="m-0">info@microdigitall.com</p>
+                  <p className="m-0">info@metamicrodigital.com</p>
                 </div>
               </div>
             </div>

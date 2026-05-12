@@ -13,7 +13,7 @@ const WebsiteDesign = () => {
       "description": "Responsive, conversion-focused websites with modern UX and performance best practices",
       "provider": {
         "@type": "Organization",
-        "name": "Meta-MicroDigital"
+        "name": "Meta MicroDigital"
       },
       "serviceType": "Web Design",
       "areaServed": "Worldwide"

@@ -117,7 +117,7 @@ const Contact = () => {
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_name: 'Meta-MicroDigital Team',
+          to_name: 'Meta MicroDigital Team',
           reply_to: formData.email,
           date: date,
           time: time
@@ -182,7 +182,7 @@ const Contact = () => {
                   <i className="fa fa-2x fa-envelope-open text-primary mr-3"></i>
                   <div className="d-flex flex-column">
                     <h5 className="font-weight-bold">Email Us</h5>
-                    <p className="m-0">microdigitall@gmail.com</p>
+                    <p className="m-0">info@metamicrodigital.com</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center">

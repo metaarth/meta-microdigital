@@ -1,6 +1,6 @@
 // App constants
-export const APP_NAME = 'Meta-MicroDigital'
-export const APP_EMAIL = 'info@microdigitall.com'
+export const APP_NAME = 'Meta MicroDigital'
+export const APP_EMAIL = 'info@metamicrodigital.com'
 export const APP_PHONE = '+91 8318891438'
 export const APP_ADDRESS = 'T-02, A-44 VDS Tower Sec-02 Near Sector-15 Metro Station'
 

@@ -63,10 +63,10 @@ const ASRealityLeadGeneration = () => {
                     className="rounded-circle"
                     style={{ width: '40px', height: '40px' }}
                     src="/assets/images/user.jpg"
-                    alt="Meta-MicroDigital Author"
+                    alt="Meta MicroDigital Author"
                   />
                   <a className="text-muted ml-2" href="#">
-                    Meta-MicroDigital Team
+                    Meta MicroDigital Team
                   </a>
                 </div>
                 <div className="d-flex align-items-center ml-4">
@@ -138,7 +138,7 @@ const ASRealityLeadGeneration = () => {
                 </h5>
                 <p className="mb-0">
                   <em>"The lead quality was excellent. It truly boosted our conversions. We now have a steady stream of 
-                  qualified leads that actually convert into sales. Meta-MicroDigital's approach to real estate marketing is 
+                  qualified leads that actually convert into sales. Meta MicroDigital's approach to real estate marketing is 
                   exactly what we needed."</em> - Sushant Pawar, Owner, AS Reality
                 </p>
               </div>
@@ -207,7 +207,7 @@ const ASRealityLeadGeneration = () => {
 
             <div className="border p-4 mb-5 bg-primary text-white">
               <h4 className="font-weight-bold mb-3">Ready to Grow Your Business?</h4>
-              <p className="mb-3">Let Meta-MicroDigital help you harness the power of digital marketing.</p>
+              <p className="mb-3">Let Meta MicroDigital help you harness the power of digital marketing.</p>
               <Link to="/contact" className="btn btn-light btn-animated">
                 Get Free Consultation
               </Link>

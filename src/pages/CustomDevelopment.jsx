@@ -13,7 +13,7 @@ const CustomDevelopment = () => {
       "description": "Professional custom development including APIs, integrations, automation, and scalable codebases",
       "provider": {
         "@type": "Organization",
-        "name": "Meta-MicroDigital"
+        "name": "Meta MicroDigital"
       },
       "serviceType": "Software Development",
       "areaServed": "Worldwide"

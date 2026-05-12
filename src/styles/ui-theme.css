@@ -1,0 +1,200 @@
+/* Site-wide UI: single accent, neutral surfaces (loads after Bootstrap + legacy CSS) */
+
+:root {
+  --ui-radius: 12px;
+  --ui-radius-sm: 10px;
+  --ui-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --ui-shadow-md: 0 10px 40px rgba(15, 23, 42, 0.08);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: #0f172a;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-navbar {
+  padding-top: 0.65rem !important;
+  padding-bottom: 0.65rem !important;
+}
+
+.site-navbar .nav-link {
+  color: #475569 !important;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem !important;
+  border-radius: var(--ui-radius-sm);
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+  color: var(--primary) !important;
+  background: rgba(2, 132, 199, 0.08);
+}
+
+.site-navbar .nav-link.active {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+.site-navbar .dropdown-toggle::after {
+  margin-left: 0.35em;
+  vertical-align: 0.12em;
+}
+
+.site-navbar .dropdown-menu {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--ui-shadow-md);
+  border-radius: var(--ui-radius);
+  padding: 0.4rem 0;
+  margin-top: 0.45rem;
+}
+
+.site-navbar .dropdown-item {
+  padding: 0.45rem 1.15rem;
+  color: #334155;
+  font-weight: 500;
+}
+
+.site-navbar .dropdown-item:hover,
+.site-navbar .dropdown-item:focus {
+  background: var(--surface-subtle);
+  color: var(--primary);
+}
+
+.site-navbar .navbar-toggler {
+  border-color: rgba(15, 23, 42, 0.12);
+  border-radius: var(--ui-radius-sm);
+}
+
+.site-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.25);
+}
+
+/* Softer card / section borders (overrides strong primary outline in legacy style.css) */
+.card,
+.card-hover,
+.service-card,
+.team-card,
+.blog-card,
+.pricing-card,
+.service-pricing-card,
+.additional-service-card,
+.testimonial-text {
+  border-color: var(--border-color) !important;
+  border-radius: var(--ui-radius) !important;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.card:hover,
+.service-card:hover,
+.blog-card:hover {
+  box-shadow: var(--ui-shadow-md);
+  border-color: rgba(2, 132, 199, 0.22) !important;
+}
+
+.container .border,
+.container-fluid .border:not(.navbar *) {
+  border-color: var(--border-color) !important;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: var(--ui-radius-sm);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(2, 132, 199, 0.35);
+}
+
+.btn-secondary {
+  border-radius: var(--ui-radius-sm);
+  font-weight: 600;
+}
+
+small.bg-primary.text-uppercase {
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.06em;
+}
+
+/* Inner page headers */
+.page-header {
+  height: auto !important;
+  min-height: 220px;
+  padding: 2.75rem 1rem 2.25rem !important;
+  background: linear-gradient(180deg, var(--surface-subtle) 0%, var(--surface) 100%) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header-title {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.page-header-breadcrumbs,
+.page-header-text {
+  color: #64748b !important;
+}
+
+.page-header-link {
+  color: var(--primary) !important;
+  font-weight: 500;
+}
+
+.page-header-link:hover {
+  color: var(--primary-dark) !important;
+  text-decoration: none !important;
+}
+
+/* Footer — navy shell, accent on interaction only */
+.footer-modern {
+  background: #0f172a !important;
+}
+
+.footer-heading {
+  color: #f8fafc !important;
+}
+
+.footer-heading::after {
+  background: var(--primary) !important;
+}
+
+.social-link:hover {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}

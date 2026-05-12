@@ -14,7 +14,7 @@ const Footer = () => {
                   <Link to="/" className="footer-logo-link">
                     <img 
                       src="/assets/images/2.png" 
-                      alt="Meta-MicroDigital Logo" 
+                      alt="Meta MicroDigital Logo" 
                       className="footer-logo-modern"
                     />
                   </Link>
@@ -169,7 +169,7 @@ const Footer = () => {
                         <i className="fas fa-envelope"></i>
                       </div>
                       <div className="contact-info">
-                        <a href="mailto:info@microdigitall.com">info@microdigitall.com</a>
+                        <a href="mailto:info@metamicrodigital.com">info@metamicrodigital.com</a>
                       </div>
                     </li>
                   </ul>
@@ -185,7 +185,7 @@ const Footer = () => {
             <div className="row align-items-center">
               <div className="col-md-6 text-center text-md-left">
                 <p className="footer-copyright mb-0">
-                  &copy; {new Date().getFullYear()} <Link to="/" className="footer-brand-name">Meta-MicroDigital</Link>. All Rights Reserved.
+                  &copy; {new Date().getFullYear()} <Link to="/" className="footer-brand-name">Meta MicroDigital</Link>. All Rights Reserved.
                 </p>
               </div>
               <div className="col-md-6 text-center text-md-right mt-3 mt-md-0">

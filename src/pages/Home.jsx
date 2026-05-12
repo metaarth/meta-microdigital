@@ -13,7 +13,7 @@ const Home = () => {
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Meta-MicroDigital",
+      "name": "Meta MicroDigital",
       "url": "https://microdigitall.com/",
       "logo": "https://microdigitall.com/assets/images/logo.png",
       "sameAs": [
@@ -44,8 +44,8 @@ const Home = () => {
             <div className="col-lg-5">
               <div className="about-image-wrapper">
                 <img 
-                  src="/assets/images/Webimg/Business.jpg" 
-                  alt="Business" 
+                  src="/assets/images/hero/home-about-team.jpg" 
+                  alt="Professionals working in a bright, modern office" 
                   className="img-fluid rounded about-business-image"
                 />
               </div>
@@ -56,7 +56,7 @@ const Home = () => {
               </small>
               <h1 className="mt-2 mb-4">Your Partner for IT & Digital Growth</h1>
               <p className="mb-4">
-                Meta-MicroDigital blends managed IT services with full‑funnel digital marketing to help
+                Meta MicroDigital blends managed IT services with full‑funnel digital marketing to help
                 businesses scale with confidence. From secure cloud infrastructure and websites that
                 convert to SEO, paid media and content, we build reliable systems that attract,
                 engage and retain customers.
@@ -88,7 +88,7 @@ const Home = () => {
                 <i className="fa fa-2x fa-envelope-open text-primary mr-3"></i>
                 <div className="d-flex flex-column">
                   <h5 className="font-weight-bold">Email Us</h5>
-                  <p className="m-0">info@microdigitall.com</p>
+                  <p className="m-0">info@metamicrodigital.com</p>
                 </div>
               </div>
             </div>
@@ -200,7 +200,7 @@ const Home = () => {
               <small className="bg-primary text-white text-uppercase font-weight-bold px-1">
                 Why Choose Us
               </small>
-              <h1 className="mt-2 mb-3">Why Choose Meta-MicroDigital?</h1>
+              <h1 className="mt-2 mb-3">Why Choose Meta MicroDigital?</h1>
               <h4 className="font-weight-normal text-muted mb-4">
                 We combine technical expertise with creative innovation to deliver measurable results
                 that drive your business forward.

@@ -25,7 +25,7 @@ const Blog = () => {
       excerpt: "Discover how Oliver Apparels established a strong online presence with social media setup, Meta Ads, and business generation. Their visibility and customer inquiries grew significantly.",
       image: "/assets/images/brandlogo/oliver.jpg",
       date: { month: "Nov", day: 15 },
-      author: "Meta-MicroDigital Team",
+      author: "Meta MicroDigital Team",
       category: "Case Study",
       link: "/blog/oliver-apparels-success"
     },
@@ -35,7 +35,7 @@ const Blog = () => {
       excerpt: "Learn how AS Reality improved their inquiry rate and sales pipeline drastically through strategic social media management, Meta Ads, and proven lead generation strategies.",
       image: "/assets/images/brandlogo/As.jpg",
       date: { month: "Nov", day: 12 },
-      author: "Meta-MicroDigital Team",
+      author: "Meta MicroDigital Team",
       category: "Real Estate",
       link: "/blog/as-reality-lead-generation"
     },
@@ -45,7 +45,7 @@ const Blog = () => {
       excerpt: "See how a fully functional business website combined with social media management improved customer trust and increased bookings for Rakesh Tour & Travels.",
       image: "/assets/images/brandlogo/rakesh.jpg",
       date: { month: "Nov", day: 10 },
-      author: "Meta-MicroDigital Team",
+      author: "Meta MicroDigital Team",
       category: "Web Development",
       link: "/blog/rakesh-tour-travels-website"
     },
@@ -55,7 +55,7 @@ const Blog = () => {
       excerpt: "Explore how multiple Meta Ads campaigns and strategic social media branding helped Kresha Fashion gain more visibility, customers, and online recognition.",
       image: "/assets/images/brandlogo/kresha.jpg",
       date: { month: "Nov", day: 8 },
-      author: "Meta-MicroDigital Team",
+      author: "Meta MicroDigital Team",
       category: "Fashion Marketing",
       link: "/blog/kresha-fashion-growth"
     }
@@ -213,7 +213,7 @@ const Blog = () => {
 
             <div className="border p-4 mb-5 bg-primary text-white">
               <h4 className="font-weight-bold mb-3">Ready to Grow Your Business?</h4>
-              <p className="mb-3">Let Meta-MicroDigital help you harness the power of digital marketing.</p>
+              <p className="mb-3">Let Meta MicroDigital help you harness the power of digital marketing.</p>
               <Link to="/contact" className="btn btn-light btn-animated">
                 Get Free Consultation
               </Link>

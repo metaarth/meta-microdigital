@@ -33,11 +33,11 @@ const Navbar = () => {
   return (
     <div className="container-fluid nav-bar p-0">
       <div className="container-lg p-0">
-        <nav className="navbar navbar-expand-lg bg-secondary navbar-dark">
+        <nav className="navbar navbar-expand-lg navbar-light bg-transparent site-navbar">
           <Link to="/" className="navbar-brand">
             <img 
               src="/assets/images/3.png" 
-              alt="Meta-MicroDigital Logo"
+              alt="Meta MicroDigital Logo"
             />
           </Link>
           <button

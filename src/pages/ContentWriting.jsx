@@ -13,7 +13,7 @@ const ContentWriting = () => {
       "description": "Professional content writing services including SEO-optimized content, copywriting, and marketing copy",
       "provider": {
         "@type": "Organization",
-        "name": "Meta-MicroDigital"
+        "name": "Meta MicroDigital"
       },
       "serviceType": "Content Creation",
       "areaServed": "Worldwide"

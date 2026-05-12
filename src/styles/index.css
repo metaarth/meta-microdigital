@@ -4,6 +4,7 @@
 /* Import custom styles from public */
 @import url('/assets/styles/style.css');
 @import url('/assets/styles/animations.css');
+@import './ui-theme.css';
 
 /* Global styles */
 * {
@@ -13,22 +14,22 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #ffffff !important;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+  color: var(--body-color, #334155);
+  background-color: var(--surface-subtle, #f8fafc);
 }
 
 #root {
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
-/* Ensure all main sections have white background */
+/* Let page content sit on the global gradient; cards keep their own surfaces */
 main,
 section,
 article {
-  background-color: #ffffff !important;
+  background-color: transparent !important;
 }
 
 /* Override any light background colors */
@@ -36,9 +37,9 @@ article {
   background-color: #ffffff !important;
 }
 
-/* Keep hero section with video background - override white background rule */
-.hero-simple {
-  background-color: transparent !important;
+/* Hero sets its own surface */
+.hero-digest {
+  background-color: #f1f5f9 !important;
 }
 
 /* Keep footer dark background - override white background rule */

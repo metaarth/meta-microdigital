@@ -63,10 +63,10 @@ const OliverApparelsSuccess = () => {
                     className="rounded-circle"
                     style={{ width: '40px', height: '40px' }}
                     src="/assets/images/user.jpg"
-                    alt="Meta-MicroDigital Author"
+                    alt="Meta MicroDigital Author"
                   />
                   <a className="text-muted ml-2" href="#">
-                    Meta-MicroDigital Team
+                    Meta MicroDigital Team
                   </a>
                 </div>
                 <div className="d-flex align-items-center ml-4">
@@ -81,7 +81,7 @@ const OliverApparelsSuccess = () => {
 
             <div className="mb-5">
               <p className="lead">
-                Oliver Apparels, a clothing brand owned by Rakesh Middha, came to Meta-MicroDigital with a vision to establish 
+                Oliver Apparels, a clothing brand owned by Rakesh Middha, came to Meta MicroDigital with a vision to establish 
                 a strong online presence. Starting from zero, we helped them build their brand online through strategic social 
                 media setup, Meta Ads campaigns, and comprehensive business generation strategies.
               </p>
@@ -148,7 +148,7 @@ const OliverApparelsSuccess = () => {
                 </h5>
                 <p className="mb-0">
                   Like Oliver Apparels, your business can also establish a strong online presence and grow your customer base. 
-                  Let Meta-MicroDigital help you achieve similar results.
+                  Let Meta MicroDigital help you achieve similar results.
                 </p>
                 <Link to="/contact" className="btn btn-light btn-animated mt-3">
                   Get Started Today
@@ -206,7 +206,7 @@ const OliverApparelsSuccess = () => {
 
             <div className="border p-4 mb-5 bg-primary text-white">
               <h4 className="font-weight-bold mb-3">Ready to Grow Your Business?</h4>
-              <p className="mb-3">Let Meta-MicroDigital help you harness the power of digital marketing.</p>
+              <p className="mb-3">Let Meta MicroDigital help you harness the power of digital marketing.</p>
               <Link to="/contact" className="btn btn-light btn-animated">
                 Get Free Consultation
               </Link>

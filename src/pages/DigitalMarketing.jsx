@@ -13,7 +13,7 @@ const DigitalMarketing = () => {
       "description": "Comprehensive digital marketing solutions including SEO, social media, model photography, and ad management",
       "provider": {
         "@type": "Organization",
-        "name": "Meta-MicroDigital"
+        "name": "Meta MicroDigital"
       },
       "serviceType": "Digital Marketing",
       "areaServed": "Worldwide"

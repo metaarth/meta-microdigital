@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Privacy Policy",
-      "description": "Privacy Policy for Meta-MicroDigital"
+      "description": "Privacy Policy for Meta MicroDigital"
     })
     document.head.appendChild(script)
     return () => document.head.removeChild(script)
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
                 </p>
                 
                 <p className="mb-4">
-                  At Meta-MicroDigital, we are committed to protecting your privacy and ensuring that your personal information is handled safely and responsibly. This Privacy Policy outlines how we collect, use, store, and protect your information when you visit our website or use our services.
+                  At Meta MicroDigital, we are committed to protecting your privacy and ensuring that your personal information is handled safely and responsibly. This Privacy Policy outlines how we collect, use, store, and protect your information when you visit our website or use our services.
                 </p>
 
                 <div className="terms-section mb-5">
@@ -180,8 +180,8 @@ const PrivacyPolicy = () => {
                   <h2 className="h4 mb-3" style={{ color: '#30D1FF' }}>11. Contact Information</h2>
                   <p className="mb-2">If you have any questions or concerns regarding this Privacy Policy, please contact us:</p>
                   <ul className="list-unstyled">
-                    <li className="mb-2"><strong>Meta-MicroDigital</strong></li>
-                    <li className="mb-2"><strong>Email:</strong> info@microdigitall.com</li>
+                    <li className="mb-2"><strong>Meta MicroDigital</strong></li>
+                    <li className="mb-2"><strong>Email:</strong> info@metamicrodigital.com</li>
                     <li className="mb-2"><strong>Phone:</strong> +91 8318891438</li>
                     <li className="mb-2"><strong>Address:</strong> T-02, A-44 VDS Tower Sec-02 Near Sector-15 Metro Station</li>
                   </ul>

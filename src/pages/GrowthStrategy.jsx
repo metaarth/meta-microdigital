@@ -13,7 +13,7 @@ const GrowthStrategy = () => {
       "description": "Professional growth strategy services including KPIs, analytics, experimentation, and roadmaps to maximize ROI",
       "provider": {
         "@type": "Organization",
-        "name": "Meta-MicroDigital"
+        "name": "Meta MicroDigital"
       },
       "serviceType": "Business Strategy",
       "areaServed": "Worldwide"
