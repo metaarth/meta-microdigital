@@ -86,6 +86,12 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
+                      <Link to="/portfolio" className="footer-link">
+                        <i className="fas fa-chevron-right"></i>
+                        <span>Portfolio</span>
+                      </Link>
+                    </li>
+                    <li>
                       <Link to="/pricing" className="footer-link">
                         <i className="fas fa-chevron-right"></i>
                         <span>Pricing</span>

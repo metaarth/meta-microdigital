@@ -22,6 +22,7 @@ import GrowthStrategy from './pages/GrowthStrategy'
 import ContentWriting from './pages/ContentWriting'
 import Termsnconditions from './pages/Termsnconditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import Portfolio from './pages/Portfolio'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/service/growth-strategy" element={<GrowthStrategy />} />
         <Route path="/service/content-writing" element={<ContentWriting />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/oliver-apparels-success" element={<OliverApparelsSuccess />} />
         <Route path="/blog/as-reality-lead-generation" element={<ASRealityLeadGeneration />} />

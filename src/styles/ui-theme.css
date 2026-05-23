@@ -198,3 +198,453 @@ small.bg-primary.text-uppercase {
   color: #fff !important;
   transform: translateY(-2px);
 }
+
+/* Portfolio — tabs + client-first layout */
+.portfolio-tabs {
+  border-bottom: 2px solid var(--border-color);
+  gap: 0.5rem;
+}
+
+.portfolio-tabs .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  color: #64748b;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--ui-radius-sm) var(--ui-radius-sm) 0 0;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio-tabs .nav-link:hover {
+  color: var(--primary);
+}
+
+.portfolio-tabs .nav-link.active {
+  color: var(--primary);
+  background: transparent;
+  border-color: var(--primary);
+}
+
+.portfolio-clients-list {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.portfolio-section .portfolio-client-block {
+  background: #fffefb;
+  border: 1px solid rgba(212, 175, 120, 0.25);
+  border-radius: var(--ui-radius);
+  padding: 1.75rem 1.75rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px rgba(212, 175, 120, 0.08);
+}
+
+.portfolio-section .portfolio-client-block-divider {
+  border-bottom: none;
+}
+
+.portfolio-client-block-divider {
+  /* spacing handled by .portfolio-section .portfolio-client-block */
+}
+
+.portfolio-client-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-client-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.portfolio-client-tagline {
+  font-size: 1rem;
+}
+
+.btn-outline-instagram {
+  color: #e1306c;
+  border: 1px solid #e1306c;
+  background: transparent;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: var(--ui-radius-sm);
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.btn-outline-instagram:hover {
+  color: #fff;
+  background: #e1306c;
+  border-color: #e1306c;
+}
+
+.portfolio-subsection-title {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #0f172a;
+}
+
+.portfolio-subsection-title .fa-instagram {
+  color: var(--primary);
+}
+
+.portfolio-reel-count {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(2, 132, 199, 0.1);
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+/* Website preview */
+.portfolio-website-preview {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--ui-radius);
+  overflow: hidden;
+  box-shadow: var(--ui-shadow-sm);
+}
+
+.portfolio-browser-chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1rem;
+  background: #f1f5f9;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.portfolio-browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cbd5e1;
+}
+
+.portfolio-browser-dot:nth-child(1) {
+  background: #f87171;
+}
+
+.portfolio-browser-dot:nth-child(2) {
+  background: #fbbf24;
+}
+
+.portfolio-browser-dot:nth-child(3) {
+  background: #4ade80;
+}
+
+.portfolio-browser-url {
+  flex: 1;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.portfolio-website-frame {
+  position: relative;
+  height: 380px;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.portfolio-website-iframe {
+  width: 200%;
+  height: 200%;
+  border: 0;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.portfolio-website-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.portfolio-website-overlay-link {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.25rem;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.55) 0%, transparent 50%);
+  text-decoration: none !important;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.portfolio-website-frame:hover .portfolio-website-overlay-link {
+  opacity: 1;
+}
+
+.portfolio-visit-badge {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+}
+
+/* Reel cards — thumbnail + play overlay (reference layout) */
+.portfolio-reels-scroll-wrap {
+  margin: 0 -0.25rem;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.portfolio-reels-scroll {
+  display: flex;
+  gap: 1.15rem;
+  overflow-x: auto;
+  padding: 0.35rem 0.25rem 1rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 120, 0.55) transparent;
+}
+
+.portfolio-reels-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.portfolio-reels-scroll::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 120, 0.45);
+  border-radius: 999px;
+}
+
+.portfolio-reel-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 200px;
+  aspect-ratio: 9 / 16;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none !important;
+  border: 1px solid rgba(212, 175, 120, 0.65);
+  box-shadow:
+    0 10px 28px rgba(212, 175, 120, 0.22),
+    0 4px 14px rgba(15, 23, 42, 0.06);
+  scroll-snap-align: start;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.portfolio-reel-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(212, 175, 120, 0.95);
+  box-shadow:
+    0 16px 36px rgba(212, 175, 120, 0.32),
+    0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+/* Live Instagram embed, scaled & cropped inside the card */
+.portfolio-reel-embed-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #0f172a;
+  pointer-events: none;
+}
+
+.portfolio-reel-card-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(110deg, #e2e8f0 8%, #f8fafc 18%, #e2e8f0 33%);
+  background-size: 200% 100%;
+  animation: portfolio-reel-shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes portfolio-reel-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.portfolio-reel-iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  height: 605px;
+  border: 0;
+  transform: translate(-50%, -50%) scale(0.58);
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+.portfolio-reel-card--ready .portfolio-reel-iframe {
+  transform: translate(-50%, -50%) scale(0.62);
+}
+
+.portfolio-reel-card:hover .portfolio-reel-iframe {
+  transform: translate(-50%, -50%) scale(0.65);
+}
+
+.portfolio-reel-card-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-reel-card:hover .portfolio-reel-card-shade {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.12) 40%,
+    rgba(0, 0, 0, 0.42) 100%
+  );
+}
+
+.portfolio-reel-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.portfolio-reel-badge .fa-instagram {
+  font-size: 0.75rem;
+}
+
+.portfolio-reel-play-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+}
+
+.portfolio-reel-play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.96);
+  color: #0f172a;
+  font-size: 1.15rem;
+  padding-left: 3px;
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.28);
+  transition: transform 0.25s ease;
+}
+
+.portfolio-reel-card:hover .portfolio-reel-play-btn {
+  transform: scale(1.1);
+}
+
+.portfolio-reel-watch-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
+.portfolio-reels-empty {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: #f8fafc;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--ui-radius);
+}
+
+.portfolio-reels-empty-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .portfolio-reel-card {
+    width: 168px;
+    border-radius: 16px;
+  }
+
+  .portfolio-section .portfolio-client-block {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-tabs .nav-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .portfolio-website-frame {
+    height: 280px;
+  }
+
+  .portfolio-website-overlay-link {
+    opacity: 1;
+  }
+
+  .portfolio-reel-card {
+    width: 150px;
+  }
+
+  .portfolio-reel-play-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .portfolio-reel-watch-text {
+    font-size: 0.72rem;
+  }
+}

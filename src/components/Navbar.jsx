@@ -72,6 +72,13 @@ const Navbar = () => {
                 Services
               </Link>
               <Link
+                to="/portfolio"
+                className={`nav-item nav-link ${isActive('/portfolio') ? 'active' : ''}`}
+                onClick={() => setIsOpen(false)}
+              >
+                Portfolio
+              </Link>
+              <Link
                 to="/pricing"
                 className={`nav-item nav-link ${isActive('/pricing') ? 'active' : ''}`}
                 onClick={() => setIsOpen(false)}
