@@ -32,23 +32,14 @@ const Portfolio = () => {
         ]}
       />
 
-      <div className="container pb-2">
-        <div className="row">
-          <div className="col-lg-8 mx-auto text-center mb-2">
-            <p className="lead text-muted mb-0">
-              Each client is listed with their website or social work. Switch tabs to view live site
-              previews or Instagram reel previews, client by client.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <PortfolioSection showHeader={false} className="pt-3" />
+      <PortfolioSection showHeader={false} />
 
       <div className="container pb-5">
-        <div className="alert alert-info text-center mb-0">
-          <h5 className="mb-2">Want a site like these?</h5>
-          <p className="mb-3">Tell us about your project and we will help you grow online.</p>
+        <div className="pf-cta text-center">
+          <h4 className="pf-cta-title">Want results like these?</h4>
+          <p className="pf-cta-text">
+            Let us build your brand's online presence — websites, social media, and everything in between.
+          </p>
           <Link to="/contact" className="btn btn-primary btn-animated">
             Get in Touch
           </Link>
