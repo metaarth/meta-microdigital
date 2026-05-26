@@ -89,13 +89,13 @@ const Navbar = () => {
               >
                 Portfolio
               </Link>
-              <Link
+              {/* <Link
                 to="/pricing"
                 className={`dn-link ${isActive('/pricing') ? 'dn-link--active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 Pricing
-              </Link>
+              </Link> */}
               <div className={`dn-dropdown ${isDropdownOpen ? 'dn-dropdown--open' : ''}`}>
                 <a
                   href="#"
