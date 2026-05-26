@@ -30,6 +30,14 @@ import kgr2 from '../Assets/ClientContent/Kalaagari/Reels/kgr2.jpeg'
 import kgr3 from '../Assets/ClientContent/Kalaagari/Reels/kgr3.jpeg'
 import kgr4 from '../Assets/ClientContent/Kalaagari/Reels/kgr4.jpeg'
 
+import mfr1 from '../Assets/ClientContent/Metafit/Reels/metafit1.jpeg'
+import mfr2 from '../Assets/ClientContent/Metafit/Reels/metafit2.jpeg'
+import mfr3 from '../Assets/ClientContent/Metafit/Reels/metafit3.jpeg'
+import mfr4 from '../Assets/ClientContent/Metafit/Reels/metafit4.jpeg'
+
+import cafe1 from '../Assets/ClientContent/2D-Cafe/Reels/2d1.jpeg'
+import cafe2 from '../Assets/ClientContent/2D-Cafe/Reels/2d2.jpeg'
+
 import mf1 from '../Assets/ClientContent/Metafit/Posts/mf1.png'
 import mf2 from '../Assets/ClientContent/Metafit/Posts/mf2.png'
 import mf3 from '../Assets/ClientContent/Metafit/Posts/mf3.png'
@@ -80,8 +88,8 @@ export const socialPortfolioClients = [
     instagramUrl: 'https://www.instagram.com/2dcafelko/',
     posts: [],
     reels: [
-      { id: '2d-1', url: 'https://www.instagram.com/reels/DYi3GYNp8vp/' },
-      { id: '2d-2', url: 'https://www.instagram.com/reels/DVA9riOgXLI/' },
+      { id: '2d-1', url: 'https://www.instagram.com/reels/DYi3GYNp8vp/', thumbnail: cafe1 },
+      { id: '2d-2', url: 'https://www.instagram.com/reels/DVA9riOgXLI/', thumbnail: cafe2 },
     ],
   },
   {
@@ -135,10 +143,10 @@ export const socialPortfolioClients = [
       { id: 'mf-p4', src: mf4 },
     ],
     reels: [
-      { id: 'mf-1', url: 'https://www.instagram.com/reels/DXGkqUlDGc0/' },
-      { id: 'mf-2', url: 'https://www.instagram.com/reels/DUaUCqJjJWH/' },
-      { id: 'mf-3', url: 'https://www.instagram.com/reels/DUTA3IvDI_5/' },
-      { id: 'mf-4', url: 'https://www.instagram.com/reels/DWOXP1zjJKC/' },
+      { id: 'mf-1', url: 'https://www.instagram.com/reels/DXGkqUlDGc0/', thumbnail: mfr1 },
+      { id: 'mf-2', url: 'https://www.instagram.com/reels/DUaUCqJjJWH/', thumbnail: mfr2 },
+      { id: 'mf-3', url: 'https://www.instagram.com/reels/DUTA3IvDI_5/', thumbnail: mfr3 },
+      { id: 'mf-4', url: 'https://www.instagram.com/reels/DWOXP1zjJKC/', thumbnail: mfr4 },
     ],
   },
   {
