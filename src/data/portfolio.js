@@ -43,6 +43,20 @@ import mf2 from '../Assets/ClientContent/Metafit/Posts/mf2.png'
 import mf3 from '../Assets/ClientContent/Metafit/Posts/mf3.png'
 import mf4 from '../Assets/ClientContent/Metafit/Posts/mf4.png'
 
+import kr1 from '../Assets/ClientContent/Kresha/Posts/Kr1.png'
+import kr2 from '../Assets/ClientContent/Kresha/Posts/Kr2.png'
+import kr3 from '../Assets/ClientContent/Kresha/Posts/KR3.png'
+import kr4 from '../Assets/ClientContent/Kresha/Posts/KR4.png'
+
+import as1 from '../Assets/ClientContent/AS-Real/Posts/As1.png'
+import as2 from '../Assets/ClientContent/AS-Real/Posts/AS2.png'
+import as3 from '../Assets/ClientContent/AS-Real/Posts/AS3.png'
+
+import rtt1 from '../Assets/ClientContent/RakeshTT/Posts/RTT1.jpeg'
+import rtt2 from '../Assets/ClientContent/RakeshTT/Posts/Rtt2.jpeg'
+import rtt3 from '../Assets/ClientContent/RakeshTT/Posts/Rtt3.jpeg'
+import rtt4 from '../Assets/ClientContent/RakeshTT/Posts/Rtt4.jpeg'
+
 import ag1 from '../Assets/ClientContent/AGfit/post/ag1.png'
 import ag2 from '../Assets/ClientContent/AGfit/post/ag2.png'
 import ag3 from '../Assets/ClientContent/AGfit/post/ag3.png'
@@ -185,6 +199,47 @@ export const socialPortfolioClients = [
       { id: 'ke-r3', url: 'https://www.instagram.com/reel/DYMmXFZzYxv/', thumbnail: ker3 },
       { id: 'ke-r4', url: 'https://www.instagram.com/reel/DYwnNkQT0U1/', thumbnail: ker4 },
     ],
+  },
+  {
+    id: 'kresha-fashion',
+    name: 'Kresha Fashion',
+    tagline: '',
+    instagramHandle: '',
+    instagramUrl: '',
+    posts: [
+      { id: 'kr-p1', src: kr1 },
+      { id: 'kr-p2', src: kr2 },
+      { id: 'kr-p3', src: kr3 },
+      { id: 'kr-p4', src: kr4 },
+    ],
+    reels: [],
+  },
+  {
+    id: 'as-real-estate',
+    name: 'AS Real Estate',
+    tagline: '',
+    instagramHandle: '',
+    instagramUrl: '',
+    posts: [
+      { id: 'as-p1', src: as1 },
+      { id: 'as-p2', src: as2 },
+      { id: 'as-p3', src: as3 },
+    ],
+    reels: [],
+  },
+  {
+    id: 'rakesh-tour-travels',
+    name: 'Rakesh Tour & Travels',
+    tagline: '',
+    instagramHandle: '',
+    instagramUrl: '',
+    posts: [
+      { id: 'rtt-p1', src: rtt1 },
+      { id: 'rtt-p2', src: rtt2 },
+      { id: 'rtt-p3', src: rtt3 },
+      { id: 'rtt-p4', src: rtt4 },
+    ],
+    reels: [],
   },
 ]
 

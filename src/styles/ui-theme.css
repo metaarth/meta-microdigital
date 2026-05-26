@@ -330,6 +330,10 @@ small.bg-primary.text-uppercase {
   gap: 1rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
+  background: linear-gradient(135deg, rgba(100, 0, 0, 0.1), rgba(120, 0, 0, 0.05));
+  border-left: 4px solid #5c0000;
+  padding: 1rem 1.25rem;
+  border-radius: 0 12px 12px 0;
 }
 
 .pf-client-avatar {
@@ -354,9 +358,10 @@ small.bg-primary.text-uppercase {
 
 .pf-client-name {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0 0 0.15rem;
   color: #0f172a;
+  letter-spacing: -0.01em;
 }
 
 .pf-client-tagline {
