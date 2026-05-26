@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import HeroCarousel from '../components/HeroCarousel'
+import LandingPage from '../components/LandingPage'
 import Counter from '../components/Counter'
 import TeamCarousel from '../components/TeamCarousel'
 import TestimonialCarousel from '../components/TestimonialCarousel'
@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <>
-          <HeroCarousel />
+          <LandingPage />
 
       {/* About Start */}
       <div className="container-fluid py-5">

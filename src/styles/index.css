@@ -16,30 +16,27 @@
 body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   line-height: 1.65;
-  color: var(--body-color, #334155);
-  background-color: var(--surface-subtle, #f8fafc);
+  color: #e2e8f0 !important;
+  background-color: #000000 !important;
 }
 
 #root {
   min-height: 100vh;
-  background-color: transparent;
+  background-color: #000000 !important;
 }
 
-/* Let page content sit on the global gradient; cards keep their own surfaces */
 main,
 section,
 article {
   background-color: transparent !important;
 }
 
-/* Override any light background colors */
 .bg-light {
-  background-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
 }
 
-/* Hero sets its own surface */
 .hero-digest {
-  background-color: #f1f5f9 !important;
+  background-color: #000000 !important;
 }
 
 /* Keep footer dark background - override white background rule */

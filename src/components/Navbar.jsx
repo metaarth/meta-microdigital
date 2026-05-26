@@ -5,6 +5,7 @@ const Navbar = () => {
   const location = useLocation()
   const [isOpen, setIsOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   const isActive = (path) => location.pathname === path
 
@@ -20,143 +21,121 @@ const Navbar = () => {
         setIsDropdownOpen(false)
       }
     }
-    
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+
     window.addEventListener('resize', handleResize)
     document.addEventListener('click', handleClickOutside)
-    
+    window.addEventListener('scroll', handleScroll)
+
     return () => {
       window.removeEventListener('resize', handleResize)
       document.removeEventListener('click', handleClickOutside)
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [isDropdownOpen])
 
   return (
-    <div className="container-fluid nav-bar p-0">
-      <div className="container-lg p-0">
-        <nav className="navbar navbar-expand-lg navbar-light bg-transparent site-navbar">
-          <Link to="/" className="navbar-brand">
-            <img 
-              src="/assets/images/3.png" 
+    <div className={`dn-wrap ${scrolled ? 'dn-wrap--scrolled' : ''}`}>
+      <div className="dn-inner">
+        <nav className="dn-nav">
+          {/* Logo */}
+          <Link to="/" className="dn-logo">
+            <img
+              src="/assets/images/logo.png"
               alt="Meta MicroDigital Logo"
             />
           </Link>
+
+          {/* Hamburger */}
           <button
             type="button"
-            className="navbar-toggler"
+            className="dn-toggler"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className={`dn-toggler-bar ${isOpen ? 'dn-toggler-bar--open' : ''}`} />
           </button>
-          <div className={`collapse navbar-collapse justify-content-center ${isOpen ? 'show' : ''}`}>
-            <div className="navbar-nav mx-auto py-0">
+
+          {/* Nav links */}
+          <div className={`dn-links ${isOpen ? 'dn-links--open' : ''}`}>
+            <div className="dn-menu">
               <Link
                 to="/"
-                className={`nav-item nav-link ${isActive('/') ? 'active' : ''}`}
+                className={`dn-link ${isActive('/') ? 'dn-link--active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className={`nav-item nav-link ${isActive('/about') ? 'active' : ''}`}
+                className={`dn-link ${isActive('/about') ? 'dn-link--active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 to="/service"
-                className={`nav-item nav-link ${isActive('/service') ? 'active' : ''}`}
+                className={`dn-link ${isActive('/service') ? 'dn-link--active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 Services
               </Link>
               <Link
                 to="/portfolio"
-                className={`nav-item nav-link ${isActive('/portfolio') ? 'active' : ''}`}
+                className={`dn-link ${isActive('/portfolio') ? 'dn-link--active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 Portfolio
               </Link>
               <Link
                 to="/pricing"
-                className={`nav-item nav-link ${isActive('/pricing') ? 'active' : ''}`}
+                className={`dn-link ${isActive('/pricing') ? 'dn-link--active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 Pricing
               </Link>
-              <div className={`nav-item dropdown ${isDropdownOpen ? 'show' : ''}`}>
+              <div className={`dn-dropdown ${isDropdownOpen ? 'dn-dropdown--open' : ''}`}>
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle"
+                  className="dn-link dn-link--dropdown"
                   onClick={(e) => {
                     e.preventDefault()
                     setIsDropdownOpen(!isDropdownOpen)
                   }}
                 >
-                  Blogs
+                  Blogs <span className="dn-caret">▾</span>
                 </a>
-                <div className={`dropdown-menu border-0 rounded-0 m-0 ${isDropdownOpen ? 'show' : ''}`}>
-                  <Link 
-                    to="/blog/oliver-apparels-success" 
-                    className="dropdown-item" 
-                    onClick={() => {
-                      setIsOpen(false)
-                      setIsDropdownOpen(false)
-                    }}
-                  >
+                <div className={`dn-dropdown-menu ${isDropdownOpen ? 'dn-dropdown-menu--open' : ''}`}>
+                  <Link to="/blog/oliver-apparels-success" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
                     Oliver Apparels Success
                   </Link>
-                  <Link 
-                    to="/blog/as-reality-lead-generation" 
-                    className="dropdown-item" 
-                    onClick={() => {
-                      setIsOpen(false)
-                      setIsDropdownOpen(false)
-                    }}
-                  >
+                  <Link to="/blog/as-reality-lead-generation" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
                     AS Reality Lead Generation
                   </Link>
-                  <Link 
-                    to="/blog/rakesh-tour-travels-website" 
-                    className="dropdown-item" 
-                    onClick={() => {
-                      setIsOpen(false)
-                      setIsDropdownOpen(false)
-                    }}
-                  >
+                  <Link to="/blog/rakesh-tour-travels-website" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
                     Rakesh Tour & Travels
                   </Link>
-                  <Link 
-                    to="/blog/kresha-fashion-growth" 
-                    className="dropdown-item" 
-                    onClick={() => {
-                      setIsOpen(false)
-                      setIsDropdownOpen(false)
-                    }}
-                  >
+                  <Link to="/blog/kresha-fashion-growth" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
                     Kresha Fashion Growth
                   </Link>
-                  <Link 
-                    to="/blog/gawri-ganga-spiritual-brand" 
-                    className="dropdown-item" 
-                    onClick={() => {
-                      setIsOpen(false)
-                      setIsDropdownOpen(false)
-                    }}
-                  >
+                  <Link to="/blog/gawri-ganga-spiritual-brand" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
                     Gawri Ganga Spiritual Brand
                   </Link>
                 </div>
               </div>
               <Link
                 to="/contact"
-                className={`nav-item nav-link ${isActive('/contact') ? 'active' : ''}`}
+                className={`dn-link ${isActive('/contact') ? 'dn-link--active' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
                 Contact
               </Link>
             </div>
+            <Link to="/contact" className="dn-cta" onClick={() => setIsOpen(false)}>
+              Book a Call
+            </Link>
           </div>
         </nav>
       </div>
