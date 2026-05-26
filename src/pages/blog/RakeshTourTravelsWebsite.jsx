@@ -2,6 +2,11 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
+import rtt1 from '../../Assets/ClientContent/RakeshTT/Posts/RTT1.jpeg'
+import rtt2 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt2.jpeg'
+import rtt3 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt3.jpeg'
+import rtt4 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt4.jpeg'
+
 const RakeshTourTravelsWebsite = () => {
   useEffect(() => {
     const script = document.createElement('script')
@@ -29,7 +34,8 @@ const RakeshTourTravelsWebsite = () => {
     { title: "Oliver Apparels Success Story", image: "/assets/images/blog-1.jpg", link: "/blog/oliver-apparels-success" },
     { title: "AS Reality Lead Generation", image: "/assets/images/blog-2.jpg", link: "/blog/as-reality-lead-generation" },
     { title: "Rakesh Tour & Travels Website", image: "/assets/images/blog-1.jpg", link: "/blog/rakesh-tour-travels-website" },
-    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" }
+    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" },
+    { title: "Gawri Ganga Spiritual Brand", image: "/assets/images/brandlogo/gawriganga.png", link: "/blog/gawri-ganga-spiritual-brand" }
   ]
 
   return (
@@ -85,6 +91,22 @@ const RakeshTourTravelsWebsite = () => {
                 business website combined with comprehensive social media management, significantly improving customer trust 
                 and increasing bookings.
               </p>
+
+              <h3 className="mt-4 mb-3">Social Media Content</h3>
+              <div className="row mb-4">
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={rtt1} alt="Rakesh Tour & Travels post 1" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={rtt2} alt="Rakesh Tour & Travels post 2" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={rtt3} alt="Rakesh Tour & Travels post 3" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={rtt4} alt="Rakesh Tour & Travels post 4" className="img-fluid rounded shadow-sm" />
+                </div>
+              </div>
 
               <h3 className="mt-4 mb-3">The Challenge</h3>
               <p>

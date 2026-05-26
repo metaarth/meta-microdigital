@@ -2,6 +2,15 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
+import olp1 from '../../Assets/ClientContent/oliver/Posts/Ol1.jpeg'
+import olp2 from '../../Assets/ClientContent/oliver/Posts/Ol2.jpeg'
+import olp3 from '../../Assets/ClientContent/oliver/Posts/Ol3.jpeg'
+import olp4 from '../../Assets/ClientContent/oliver/Posts/Ol4.jpeg'
+import olr1 from '../../Assets/ClientContent/oliver/reels/ol1.jpeg'
+import olr2 from '../../Assets/ClientContent/oliver/reels/ol2.jpeg'
+import olr3 from '../../Assets/ClientContent/oliver/reels/ol3.jpeg'
+import olr4 from '../../Assets/ClientContent/oliver/reels/ol4.jpeg'
+
 const OliverApparelsSuccess = () => {
   useEffect(() => {
     const script = document.createElement('script')
@@ -29,7 +38,8 @@ const OliverApparelsSuccess = () => {
     { title: "Oliver Apparels Success Story", image: "/assets/images/blog-1.jpg", link: "/blog/oliver-apparels-success" },
     { title: "AS Reality Lead Generation", image: "/assets/images/blog-2.jpg", link: "/blog/as-reality-lead-generation" },
     { title: "Rakesh Tour & Travels Website", image: "/assets/images/blog-1.jpg", link: "/blog/rakesh-tour-travels-website" },
-    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" }
+    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" },
+    { title: "Gawri Ganga Spiritual Brand", image: "/assets/images/brandlogo/gawriganga.png", link: "/blog/gawri-ganga-spiritual-brand" }
   ]
 
   return (
@@ -85,6 +95,38 @@ const OliverApparelsSuccess = () => {
                 a strong online presence. Starting from zero, we helped them build their brand online through strategic social 
                 media setup, Meta Ads campaigns, and comprehensive business generation strategies.
               </p>
+
+              <h3 className="mt-4 mb-3">Instagram Posts</h3>
+              <div className="row mb-4">
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olp1} alt="Oliver Apparels post 1" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olp2} alt="Oliver Apparels post 2" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olp3} alt="Oliver Apparels post 3" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olp4} alt="Oliver Apparels post 4" className="img-fluid rounded shadow-sm" />
+                </div>
+              </div>
+
+              <h3 className="mt-4 mb-3">Reels That Drove Engagement</h3>
+              <div className="row mb-4">
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olr1} alt="Oliver Apparels reel 1" className="img-fluid rounded shadow-sm" style={{ aspectRatio: '9/16', objectFit: 'cover', width: '100%' }} />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olr2} alt="Oliver Apparels reel 2" className="img-fluid rounded shadow-sm" style={{ aspectRatio: '9/16', objectFit: 'cover', width: '100%' }} />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olr3} alt="Oliver Apparels reel 3" className="img-fluid rounded shadow-sm" style={{ aspectRatio: '9/16', objectFit: 'cover', width: '100%' }} />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={olr4} alt="Oliver Apparels reel 4" className="img-fluid rounded shadow-sm" style={{ aspectRatio: '9/16', objectFit: 'cover', width: '100%' }} />
+                </div>
+              </div>
 
               <h3 className="mt-4 mb-3">The Challenge</h3>
               <p>

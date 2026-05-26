@@ -14,6 +14,7 @@ import OliverApparelsSuccess from './pages/blog/OliverApparelsSuccess'
 import ASRealityLeadGeneration from './pages/blog/ASRealityLeadGeneration'
 import RakeshTourTravelsWebsite from './pages/blog/RakeshTourTravelsWebsite'
 import KreshaFashionGrowth from './pages/blog/KreshaFashionGrowth'
+import GawriGangaSpiritual from './pages/blog/GawriGangaSpiritual'
 import WebsiteDesign from './pages/WebsiteDesign'
 import SEO from './pages/SEO'
 import CustomDevelopment from './pages/CustomDevelopment'
@@ -46,6 +47,7 @@ function App() {
         <Route path="/blog/as-reality-lead-generation" element={<ASRealityLeadGeneration />} />
         <Route path="/blog/rakesh-tour-travels-website" element={<RakeshTourTravelsWebsite />} />
         <Route path="/blog/kresha-fashion-growth" element={<KreshaFashionGrowth />} />
+        <Route path="/blog/gawri-ganga-spiritual-brand" element={<GawriGangaSpiritual />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms-and-conditions" element={<Termsnconditions />} />

@@ -2,6 +2,11 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
+import kr1 from '../../Assets/ClientContent/Kresha/Posts/Kr1.png'
+import kr2 from '../../Assets/ClientContent/Kresha/Posts/Kr2.png'
+import kr3 from '../../Assets/ClientContent/Kresha/Posts/KR3.png'
+import kr4 from '../../Assets/ClientContent/Kresha/Posts/KR4.png'
+
 const KreshaFashionGrowth = () => {
   useEffect(() => {
     const script = document.createElement('script')
@@ -29,7 +34,8 @@ const KreshaFashionGrowth = () => {
     { title: "Oliver Apparels Success Story", image: "/assets/images/blog-1.jpg", link: "/blog/oliver-apparels-success" },
     { title: "AS Reality Lead Generation", image: "/assets/images/blog-2.jpg", link: "/blog/as-reality-lead-generation" },
     { title: "Rakesh Tour & Travels Website", image: "/assets/images/blog-1.jpg", link: "/blog/rakesh-tour-travels-website" },
-    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" }
+    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" },
+    { title: "Gawri Ganga Spiritual Brand", image: "/assets/images/brandlogo/gawriganga.png", link: "/blog/gawri-ganga-spiritual-brand" }
   ]
 
   return (
@@ -85,6 +91,22 @@ const KreshaFashionGrowth = () => {
                 marketing strategy. Multiple Meta Ads campaigns combined with strategic social media branding helped them 
                 gain more visibility, attract new customers, and build strong online recognition.
               </p>
+
+              <h3 className="mt-4 mb-3">Social Media Content</h3>
+              <div className="row mb-4">
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={kr1} alt="Kresha Fashion post 1" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={kr2} alt="Kresha Fashion post 2" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={kr3} alt="Kresha Fashion post 3" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-3 mb-3">
+                  <img src={kr4} alt="Kresha Fashion post 4" className="img-fluid rounded shadow-sm" />
+                </div>
+              </div>
 
               <h3 className="mt-4 mb-3">The Challenge</h3>
               <p>

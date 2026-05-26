@@ -58,6 +58,16 @@ const Blog = () => {
       author: "Meta MicroDigital Team",
       category: "Fashion Marketing",
       link: "/blog/kresha-fashion-growth"
+    },
+    {
+      id: 5,
+      title: "How Gawri Ganga Built a Trusted Spiritual Wellness Brand Online",
+      excerpt: "Discover how Gawri Ganga, an authentic Rudraksha and spiritual wellness brand, established a powerful e-commerce presence with a professional website, Instagram strategy, and YouTube content.",
+      image: "/assets/images/brandlogo/gawriganga.png",
+      date: { month: "May", day: 26 },
+      author: "Meta MicroDigital Team",
+      category: "E-commerce",
+      link: "/blog/gawri-ganga-spiritual-brand"
     }
   ]
 

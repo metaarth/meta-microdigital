@@ -137,6 +137,16 @@ const Navbar = () => {
                   >
                     Kresha Fashion Growth
                   </Link>
+                  <Link 
+                    to="/blog/gawri-ganga-spiritual-brand" 
+                    className="dropdown-item" 
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsDropdownOpen(false)
+                    }}
+                  >
+                    Gawri Ganga Spiritual Brand
+                  </Link>
                 </div>
               </div>
               <Link

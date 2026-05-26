@@ -2,6 +2,10 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
+import asp1 from '../../Assets/ClientContent/AS-Real/Posts/As1.png'
+import asp2 from '../../Assets/ClientContent/AS-Real/Posts/AS2.png'
+import asp3 from '../../Assets/ClientContent/AS-Real/Posts/AS3.png'
+
 const ASRealityLeadGeneration = () => {
   useEffect(() => {
     const script = document.createElement('script')
@@ -29,7 +33,8 @@ const ASRealityLeadGeneration = () => {
     { title: "Oliver Apparels Success Story", image: "/assets/images/blog-1.jpg", link: "/blog/oliver-apparels-success" },
     { title: "AS Reality Lead Generation", image: "/assets/images/blog-2.jpg", link: "/blog/as-reality-lead-generation" },
     { title: "Rakesh Tour & Travels Website", image: "/assets/images/blog-1.jpg", link: "/blog/rakesh-tour-travels-website" },
-    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" }
+    { title: "Kresha Fashion Growth", image: "/assets/images/blog-2.jpg", link: "/blog/kresha-fashion-growth" },
+    { title: "Gawri Ganga Spiritual Brand", image: "/assets/images/brandlogo/gawriganga.png", link: "/blog/gawri-ganga-spiritual-brand" }
   ]
 
   return (
@@ -85,6 +90,19 @@ const ASRealityLeadGeneration = () => {
                 leads and improve their sales pipeline. Through strategic social media management, targeted Meta Ads campaigns, 
                 and proven lead generation strategies, we helped them achieve remarkable results.
               </p>
+
+              <h3 className="mt-4 mb-3">Social Media Content</h3>
+              <div className="row mb-4">
+                <div className="col-6 col-md-4 mb-3">
+                  <img src={asp1} alt="AS Reality post 1" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-4 mb-3">
+                  <img src={asp2} alt="AS Reality post 2" className="img-fluid rounded shadow-sm" />
+                </div>
+                <div className="col-6 col-md-4 mb-3">
+                  <img src={asp3} alt="AS Reality post 3" className="img-fluid rounded shadow-sm" />
+                </div>
+              </div>
 
               <h3 className="mt-4 mb-3">The Challenge</h3>
               <p>
