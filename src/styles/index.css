@@ -4,6 +4,7 @@
 /* Import custom styles from public */
 @import url('/assets/styles/style.css');
 @import url('/assets/styles/animations.css');
+@import './theme.css';
 @import './ui-theme.css';
 
 /* Global styles */
@@ -13,16 +14,23 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   line-height: 1.65;
-  color: #e2e8f0 !important;
-  background-color: #000000 !important;
+  color: var(--site-text) !important;
+  background-color: var(--site-bg) !important;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 #root {
   min-height: 100vh;
-  background-color: #000000 !important;
+  background-color: var(--site-bg) !important;
+  transition: background-color 0.25s ease;
 }
 
 main,
@@ -32,11 +40,11 @@ article {
 }
 
 .bg-light {
-  background-color: rgba(255, 255, 255, 0.03) !important;
+  background-color: var(--site-bg-light) !important;
 }
 
 .hero-digest {
-  background-color: #000000 !important;
+  background-color: var(--site-bg) !important;
 }
 
 /* Keep footer dark background - override white background rule */
@@ -83,5 +91,93 @@ article {
 .bg-secondary [class*="col-"] a {
   pointer-events: auto !important;
   cursor: pointer !important;
+}
+
+/* ─── Global mobile ─── */
+@media (max-width: 991px) {
+  .container,
+  .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .page-header {
+    min-height: 160px !important;
+    padding: 5.5rem 1rem 2rem !important;
+  }
+
+  .page-header-title,
+  .display-4.page-header-title {
+    font-size: 1.75rem !important;
+  }
+
+  .pricing-card.featured {
+    transform: none !important;
+  }
+
+  .pricing-card.featured:hover {
+    transform: translateY(-5px) !important;
+  }
+
+  .price-display .amount {
+    font-size: 2.25rem !important;
+  }
+
+  .custom-package-cta {
+    padding: 2rem 1.25rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header-title,
+  .display-4.page-header-title {
+    font-size: 1.5rem !important;
+  }
+
+  h1.display-4,
+  .container h1 {
+    font-size: 1.65rem !important;
+  }
+
+  h2.font-weight-bold,
+  .container h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .pf-section .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .pf-client-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .pf-client-name {
+    font-size: 1.5rem !important;
+  }
+
+  .pf-ig-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pf-tabs-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+
+  .pf-tabs {
+    flex-wrap: nowrap;
+    min-width: max-content;
+  }
+
+  .pf-post-card,
+  .pf-reel-card {
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
 }
 

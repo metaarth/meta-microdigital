@@ -27,11 +27,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: #ffffff !important;
+  color: var(--site-heading) !important;
 }
 
 p, li, span, label, td, th {
-  color: #cbd5e1;
+  color: var(--site-body);
 }
 
 a {
@@ -42,7 +42,7 @@ a:hover {
 }
 
 .text-muted {
-  color: #94a3b8 !important;
+  color: var(--site-text-muted) !important;
 }
 
 .border {
@@ -51,7 +51,7 @@ a:hover {
 
 .container-fluid,
 .container {
-  color: #e2e8f0;
+  color: var(--site-text);
 }
 
 .bg-primary {
@@ -228,10 +228,9 @@ a:hover {
   transition: background 0.3s, box-shadow 0.3s;
 }
 .dn-wrap--scrolled {
-  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 30px var(--site-shadow);
 }
 
 .dn-inner {
@@ -243,7 +242,6 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.04);
   border: none;
   border-radius: 999px;
   padding: 6px 8px 6px 20px;
@@ -310,7 +308,7 @@ a:hover {
 }
 
 .dn-link {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: var(--site-nav-link) !important;
   font-size: 0.85rem;
   font-weight: 500;
   padding: 8px 14px;
@@ -323,11 +321,11 @@ a:hover {
   border: none;
 }
 .dn-link:hover {
-  color: #fff !important;
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--site-nav-link-hover) !important;
+  background: var(--site-nav-hover-bg);
 }
 .dn-link--active {
-  color: #fff !important;
+  color: var(--site-nav-link-hover) !important;
   background: rgba(6, 182, 212, 0.15) !important;
   font-weight: 600;
 }
@@ -400,22 +398,33 @@ a:hover {
 
 /* ─── Mobile ─── */
 @media (max-width: 992px) {
+  .dn-wrap {
+    padding: 10px 12px;
+  }
   .dn-nav {
     border-radius: 16px;
     flex-wrap: wrap;
-    padding: 10px 16px;
+    padding: 10px 14px;
+    align-items: flex-start;
+  }
+  .dn-logo img {
+    height: 48px;
   }
   .dn-toggler {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 0;
   }
   .dn-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    padding-top: 16px;
+    padding-top: 12px;
     gap: 6px;
+    max-height: min(70vh, 520px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .dn-links--open {
     display: flex;
@@ -428,12 +437,14 @@ a:hover {
   .dn-link {
     width: 100%;
     text-align: left;
-    padding: 10px 14px;
+    padding: 12px 14px;
     border-radius: 10px;
   }
   .dn-dropdown-menu {
     position: static;
     transform: none;
+    display: none;
+    width: 100%;
     border: none;
     box-shadow: none;
     background: rgba(255, 255, 255, 0.04);
@@ -441,11 +452,23 @@ a:hover {
     padding: 4px;
     margin-top: 4px;
   }
+  .dn-dropdown-menu--open {
+    display: block;
+  }
   .dn-cta {
     width: 100%;
     justify-content: center;
     margin-top: 8px;
-    padding: 12px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dn-logo img {
+    height: 40px;
+  }
+  .dn-wrap {
+    padding: 8px 10px;
   }
 }
 
@@ -513,18 +536,18 @@ small.bg-primary.text-uppercase {
   height: auto !important;
   min-height: 220px;
   padding: 2.75rem 1rem 2.25rem !important;
-  background: linear-gradient(180deg, #0a0e1a 0%, #000000 100%) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--site-page-header) !important;
+  border-bottom: 1px solid var(--site-footer-border);
 }
 
 .page-header-title {
-  color: #ffffff !important;
+  color: var(--site-heading) !important;
   font-weight: 700 !important;
 }
 
 .page-header-breadcrumbs,
 .page-header-text {
-  color: #94a3b8 !important;
+  color: var(--site-text-muted) !important;
 }
 
 .page-header-link {
@@ -539,8 +562,8 @@ small.bg-primary.text-uppercase {
 
 /* Footer — navy shell, accent on interaction only */
 .footer-modern {
-  background: #000000 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--site-footer-bg) !important;
+  border-top: 1px solid var(--site-footer-border);
 }
 
 .footer-heading {
@@ -1020,8 +1043,10 @@ small.bg-primary.text-uppercase {
     font-size: 0.82rem;
   }
 
+  .pf-posts-grid,
   .pf-reels-row {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
   }
 
   .pf-reel-card {
@@ -1033,5 +1058,25 @@ small.bg-primary.text-uppercase {
     height: 40px;
     font-size: 0.75rem;
     border-radius: 10px;
+  }
+
+  .pf-hero-title {
+    font-size: 1.45rem !important;
+  }
+
+  .pf-hero-sub {
+    font-size: 0.9rem;
+  }
+
+  .pf-section-label {
+    font-size: 1.05rem;
+  }
+
+  .pf-cta {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .pf-cta-title {
+    font-size: 1.35rem !important;
   }
 }

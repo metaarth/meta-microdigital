@@ -1,0 +1,238 @@
+/* Home page sections — dark theme + 2-column card grids */
+
+.home-section {
+  padding: 3rem 0;
+}
+
+.home-section .container {
+  max-width: 1200px;
+}
+
+/* Section intro (centered on mobile) */
+.home-section-intro {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+  .home-section-intro {
+    text-align: center;
+  }
+
+  .home-section-intro .btn {
+    display: inline-flex;
+  }
+}
+
+/* 2 cards per row grid */
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .home-card-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Contact / info cards */
+.home-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  min-height: 100px;
+  height: auto !important;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px;
+}
+
+.home-info-card i {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.home-info-card h5 {
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+  color: #fff !important;
+}
+
+.home-info-card p {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Service cards — 2 per row */
+.home-service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 1.25rem !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px;
+}
+
+.home-service-card i {
+  margin-right: 0 !important;
+  margin-bottom: 0.75rem;
+  font-size: 2rem !important;
+}
+
+.home-service-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem !important;
+}
+
+.home-service-card p {
+  font-size: 0.85rem;
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+}
+
+.home-service-card a {
+  font-size: 0.82rem;
+  color: #06b6d4 !important;
+}
+
+/* Stat / counter cards — 2 per row */
+.home-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.25rem 0.75rem !important;
+  min-height: 120px;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px;
+}
+
+.home-stat-card h5 {
+  font-size: 0.85rem !important;
+  margin-bottom: 0.75rem !important;
+  text-align: center;
+}
+
+/* Pricing cards — 2 per row */
+.home-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.home-pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-pricing-card .home-pricing-head {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6) !important;
+  padding: 1.25rem 0.75rem;
+  text-align: center;
+}
+
+.home-pricing-card .home-pricing-head h3 {
+  color: #fff !important;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-pricing-card .home-pricing-head .display-4 {
+  font-size: 1.5rem !important;
+  color: #fff !important;
+}
+
+.home-pricing-card .home-pricing-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: none;
+}
+
+.home-pricing-card .home-pricing-body p {
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+  text-align: center;
+}
+
+.home-pricing-card .btn {
+  margin-top: auto;
+  font-size: 0.82rem;
+  padding: 0.5rem 1rem !important;
+}
+
+/* About image */
+.home-about-image {
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .home-about-image {
+    margin-bottom: 0;
+  }
+}
+
+/* Testimonial block */
+.home-testimonial-wrap {
+  min-height: 280px;
+}
+
+@media (max-width: 767px) {
+  .home-card-grid,
+  .home-pricing-grid {
+    gap: 0.75rem;
+  }
+
+  .home-service-card,
+  .home-stat-card {
+    padding: 1rem !important;
+  }
+
+  .home-service-card i {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-card-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-card-grid--3 .home-info-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 0.375rem);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section {
+    padding: 2.25rem 0;
+  }
+
+  .home-info-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-pricing-card .home-pricing-head .display-4 {
+    font-size: 1.25rem !important;
+  }
+}

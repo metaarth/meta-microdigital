@@ -34,7 +34,7 @@ const features = [
 ]
 
 const CampaignChart = () => (
-  <svg viewBox="0 0 420 140" style={{ width: '100%', height: 160, display: 'block' }}>
+  <svg viewBox="0 0 420 140" className="lp-chart-svg">
     <defs>
       <linearGradient id="lp-areaGrad" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.35" />
@@ -135,6 +135,26 @@ const LandingPage = () => {
                     <span key={d}>{d}</span>
                   ))}
                 </div>
+              </div>
+            </div>
+
+            {/* Mobile / tablet stats (replaces floating cards) */}
+            <div className="lp-mobile-stats">
+              <div className="lp-glass lp-stat-inner">
+                <p className="lp-stat-label">ROAS</p>
+                <p className="lp-stat-value lp-stat-value--cyan">5.76x</p>
+              </div>
+              <div className="lp-glass lp-stat-inner">
+                <p className="lp-stat-label">Conversions</p>
+                <p className="lp-stat-value lp-stat-value--white">3,672</p>
+              </div>
+              <div className="lp-glass lp-stat-inner">
+                <p className="lp-stat-label">Meta Ads</p>
+                <p className="lp-stat-value lp-stat-value--white">12</p>
+              </div>
+              <div className="lp-glass lp-stat-inner">
+                <p className="lp-stat-label">Total Spend</p>
+                <p className="lp-stat-value lp-stat-value--white">₹ 8.45L</p>
               </div>
             </div>
 

@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom'
 
+const footerBlogs = [
+  { to: '/blog/oliver-apparels-success', label: 'Oliver Apparels Success' },
+  { to: '/blog/as-reality-lead-generation', label: 'AS Reality Lead Generation' },
+  { to: '/blog/rakesh-tour-travels-website', label: 'Rakesh Tour & Travels' },
+  { to: '/blog/kresha-fashion-growth', label: 'Kresha Fashion Growth' },
+  { to: '/blog/gawri-ganga-spiritual-brand', label: 'Gawri Ganga Spiritual Brand' },
+]
+
 const Footer = () => {
   return (
     <>
@@ -63,7 +71,7 @@ const Footer = () => {
               </div>
 
               {/* Quick Links */}
-              <div className="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <div className="col-lg-2 col-md-6 col-6 mb-5 mb-lg-0">
                 <div className="footer-links-section">
                   <h5 className="footer-heading">Quick Links</h5>
                   <ul className="footer-links-list">
@@ -107,8 +115,25 @@ const Footer = () => {
                 </div>
               </div>
 
+              {/* Blogs */}
+              <div className="col-lg-2 col-md-6 col-6 mb-5 mb-lg-0">
+                <div className="footer-links-section">
+                  <h5 className="footer-heading">Blogs</h5>
+                  <ul className="footer-links-list">
+                    {footerBlogs.map((blog) => (
+                      <li key={blog.to}>
+                        <Link to={blog.to} className="footer-link">
+                          <i className="fas fa-chevron-right"></i>
+                          <span>{blog.label}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
               {/* Services */}
-              <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+              <div className="col-lg-2 col-md-6 col-6 mb-5 mb-lg-0">
                 <div className="footer-links-section">
                   <h5 className="footer-heading">Our Services</h5>
                   <ul className="footer-links-list">
@@ -147,7 +172,7 @@ const Footer = () => {
               </div>
 
               {/* Contact Info */}
-              <div className="col-lg-3 col-md-6">
+              <div className="col-lg-2 col-md-6 col-12">
                 <div className="footer-contact-section">
                   <h5 className="footer-heading">Get In Touch</h5>
                   <p className="footer-contact-intro">

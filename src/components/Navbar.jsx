@@ -1,24 +1,20 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { useTheme } from '../context/ThemeContext'
 
 const Navbar = () => {
   const location = useLocation()
+  const { theme, toggleTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   const isActive = (path) => location.pathname === path
+  const logoSrc = theme === 'light' ? '/assets/images/3.png' : '/assets/images/logo.png'
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 992) {
         setIsOpen(false)
-        setIsDropdownOpen(false)
-      }
-    }
-    const handleClickOutside = (e) => {
-      if (isDropdownOpen && !e.target.closest('.dropdown')) {
-        setIsDropdownOpen(false)
       }
     }
     const handleScroll = () => {
@@ -26,37 +22,41 @@ const Navbar = () => {
     }
 
     window.addEventListener('resize', handleResize)
-    document.addEventListener('click', handleClickOutside)
     window.addEventListener('scroll', handleScroll)
 
     return () => {
       window.removeEventListener('resize', handleResize)
-      document.removeEventListener('click', handleClickOutside)
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [isDropdownOpen])
+  }, [])
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [location.pathname])
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
 
   return (
     <div className={`dn-wrap ${scrolled ? 'dn-wrap--scrolled' : ''}`}>
       <div className="dn-inner">
-        <nav className="dn-nav">
+        <nav className={`dn-nav ${theme === 'light' ? 'dn-nav--brand' : ''}`}>
           {/* Logo */}
           <Link to="/" className="dn-logo">
             <img
-              src="/assets/images/logo.png"
+              src={logoSrc}
               alt="Meta MicroDigital Logo"
+              className={theme === 'light' ? 'dn-logo-img--light' : 'dn-logo-img--dark'}
             />
           </Link>
-
-          {/* Hamburger */}
-          <button
-            type="button"
-            className="dn-toggler"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle navigation"
-          >
-            <span className={`dn-toggler-bar ${isOpen ? 'dn-toggler-bar--open' : ''}`} />
-          </button>
 
           {/* Nav links */}
           <div className={`dn-links ${isOpen ? 'dn-links--open' : ''}`}>
@@ -89,42 +89,6 @@ const Navbar = () => {
               >
                 Portfolio
               </Link>
-              {/* <Link
-                to="/pricing"
-                className={`dn-link ${isActive('/pricing') ? 'dn-link--active' : ''}`}
-                onClick={() => setIsOpen(false)}
-              >
-                Pricing
-              </Link> */}
-              <div className={`dn-dropdown ${isDropdownOpen ? 'dn-dropdown--open' : ''}`}>
-                <a
-                  href="#"
-                  className="dn-link dn-link--dropdown"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    setIsDropdownOpen(!isDropdownOpen)
-                  }}
-                >
-                  Blogs <span className="dn-caret">▾</span>
-                </a>
-                <div className={`dn-dropdown-menu ${isDropdownOpen ? 'dn-dropdown-menu--open' : ''}`}>
-                  <Link to="/blog/oliver-apparels-success" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
-                    Oliver Apparels Success
-                  </Link>
-                  <Link to="/blog/as-reality-lead-generation" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
-                    AS Reality Lead Generation
-                  </Link>
-                  <Link to="/blog/rakesh-tour-travels-website" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
-                    Rakesh Tour & Travels
-                  </Link>
-                  <Link to="/blog/kresha-fashion-growth" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
-                    Kresha Fashion Growth
-                  </Link>
-                  <Link to="/blog/gawri-ganga-spiritual-brand" className="dn-dropdown-item" onClick={() => { setIsOpen(false); setIsDropdownOpen(false) }}>
-                    Gawri Ganga Spiritual Brand
-                  </Link>
-                </div>
-              </div>
               <Link
                 to="/contact"
                 className={`dn-link ${isActive('/contact') ? 'dn-link--active' : ''}`}
@@ -137,6 +101,25 @@ const Navbar = () => {
               Book a Call
             </Link>
           </div>
+
+          <button
+            type="button"
+            className="dn-theme-toggle"
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
+          >
+            <i className={`fas ${theme === 'dark' ? 'fa-sun' : 'fa-moon'}`} aria-hidden="true" />
+          </button>
+
+          <button
+            type="button"
+            className="dn-toggler"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation"
+          >
+            <span className={`dn-toggler-bar ${isOpen ? 'dn-toggler-bar--open' : ''}`} />
+          </button>
         </nav>
       </div>
     </div>
