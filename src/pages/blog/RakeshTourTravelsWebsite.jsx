@@ -2,10 +2,10 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
-import rtt1 from '../../Assets/ClientContent/RakeshTT/Posts/RTT1.jpeg'
-import rtt2 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt2.jpeg'
-import rtt3 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt3.jpeg'
-import rtt4 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt4.jpeg'
+import rtt1 from '../../Assets/ClientContent/RakeshTT/Posts/RTT1.webp'
+import rtt2 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt2.webp'
+import rtt3 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt3.webp'
+import rtt4 from '../../Assets/ClientContent/RakeshTT/Posts/Rtt4.webp'
 
 const RakeshTourTravelsWebsite = () => {
   useEffect(() => {

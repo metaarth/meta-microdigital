@@ -2,14 +2,14 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
-import olp1 from '../../Assets/ClientContent/oliver/Posts/Ol1.jpeg'
-import olp2 from '../../Assets/ClientContent/oliver/Posts/Ol2.jpeg'
-import olp3 from '../../Assets/ClientContent/oliver/Posts/Ol3.jpeg'
-import olp4 from '../../Assets/ClientContent/oliver/Posts/Ol4.jpeg'
-import olr1 from '../../Assets/ClientContent/oliver/reels/ol1.jpeg'
-import olr2 from '../../Assets/ClientContent/oliver/reels/ol2.jpeg'
-import olr3 from '../../Assets/ClientContent/oliver/reels/ol3.jpeg'
-import olr4 from '../../Assets/ClientContent/oliver/reels/ol4.jpeg'
+import olp1 from '../../Assets/ClientContent/oliver/Posts/Ol1.webp'
+import olp2 from '../../Assets/ClientContent/oliver/Posts/Ol2.webp'
+import olp3 from '../../Assets/ClientContent/oliver/Posts/Ol3.webp'
+import olp4 from '../../Assets/ClientContent/oliver/Posts/Ol4.webp'
+import olr1 from '../../Assets/ClientContent/oliver/reels/ol1.webp'
+import olr2 from '../../Assets/ClientContent/oliver/reels/ol2.webp'
+import olr3 from '../../Assets/ClientContent/oliver/reels/ol3.webp'
+import olr4 from '../../Assets/ClientContent/oliver/reels/ol4.webp'
 
 const OliverApparelsSuccess = () => {
   useEffect(() => {

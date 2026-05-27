@@ -2,10 +2,10 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
-import kr1 from '../../Assets/ClientContent/Kresha/Posts/Kr1.png'
-import kr2 from '../../Assets/ClientContent/Kresha/Posts/Kr2.png'
-import kr3 from '../../Assets/ClientContent/Kresha/Posts/KR3.png'
-import kr4 from '../../Assets/ClientContent/Kresha/Posts/KR4.png'
+import kr1 from '../../Assets/ClientContent/Kresha/Posts/Kr1.webp'
+import kr2 from '../../Assets/ClientContent/Kresha/Posts/Kr2.webp'
+import kr3 from '../../Assets/ClientContent/Kresha/Posts/KR3.webp'
+import kr4 from '../../Assets/ClientContent/Kresha/Posts/KR4.webp'
 
 const KreshaFashionGrowth = () => {
   useEffect(() => {

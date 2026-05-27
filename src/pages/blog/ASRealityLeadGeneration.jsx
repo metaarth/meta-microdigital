@@ -2,9 +2,9 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 
-import asp1 from '../../Assets/ClientContent/AS-Real/Posts/As1.png'
-import asp2 from '../../Assets/ClientContent/AS-Real/Posts/AS2.png'
-import asp3 from '../../Assets/ClientContent/AS-Real/Posts/AS3.png'
+import asp1 from '../../Assets/ClientContent/AS-Real/Posts/As1.webp'
+import asp2 from '../../Assets/ClientContent/AS-Real/Posts/AS2.webp'
+import asp3 from '../../Assets/ClientContent/AS-Real/Posts/AS3.webp'
 
 const ASRealityLeadGeneration = () => {
   useEffect(() => {
