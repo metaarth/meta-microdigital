@@ -3,9 +3,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
 import ScrollToTop from './components/ScrollToTop'
-import Home from './pages/Home'
+
 import About from './pages/About'
-import Services from './pages/Services'
+
 import Pricing from './pages/Pricing'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
